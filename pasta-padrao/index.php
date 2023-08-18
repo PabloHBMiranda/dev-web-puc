@@ -1,5 +1,3 @@
 <?php
-
-?>
-
-<h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+include 'inc/layout/templates-header/header-main.php';
+include 'inc/layout/templates-footer/footer-main.php';
