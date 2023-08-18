@@ -5,8 +5,8 @@ module.exports = {
     mode: 'production',
     entry: {
         index: [
-            path.resolve(__dirname, 'assets', 'index.js'),
-            path.resolve(__dirname, 'assets', 'index.scss')
+            path.resolve(__dirname, 'src', 'index.js'),
+            path.resolve(__dirname, 'src', 'index.scss')
         ]
     },
     output: {
