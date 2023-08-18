@@ -2,9 +2,8 @@
 include 'inc/layout/templates-header/header-main.php';
 
 
-//use NucleoWeb\Component\URL\URL;
 //
-//$url_args = URL::args();
+//$url_args =
 //
 //$pagina = $url_args[0] ?? null;
 //
