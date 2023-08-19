@@ -10,7 +10,9 @@
 </head>
 <body>
 <header>
-    <h1 class="titulo">Minha Página Teste</h1>
+    <?php
+        include 'templates/sections/header/header-main.php';
+    ?>
 </header>
 </body>
 </html>
