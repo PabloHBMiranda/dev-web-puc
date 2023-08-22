@@ -1,1 +1,1 @@
-console.log("tentar novamente");
+console.log("TESTE DO JS");
