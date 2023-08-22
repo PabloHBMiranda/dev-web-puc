@@ -4,6 +4,7 @@ Tema Padrão para desenvolvimento.
 Descrição do tema:
 
 assets: Localização do CSS, JS, IMAGENS, ICONS, FONTS.
+
 templates: PHP + HTML do FRONT-END do site(páginas, seções...).
 src: PHP do BACK END.
 
