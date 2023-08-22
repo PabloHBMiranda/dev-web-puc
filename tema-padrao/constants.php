@@ -10,5 +10,8 @@ define('PAGES', __DIR__ . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATO
 define('ICONS', __DIR__ . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'icons' . DIRECTORY_SEPARATOR);
 
 //Diretório das imagens
-define('ICONS', __DIR__ . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR);
+define('IMAGES', __DIR__ . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR);
+
+//Diterório das fontes
+define('FONTS', __DIR__ . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'fonts' . DIRECTORY_SEPARATOR);
 
