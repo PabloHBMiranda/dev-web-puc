@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bundle/index.css">
     <script src="bundle/index.js"></script>
-    <title>Document</title>
+    <?php $url = $_SERVER["REQUEST_URI"];
+    $url_part = explode('/', $url); ?>
+    <title><?= end($url_part) ?></title>
 </head>
 <body>
 <header>
