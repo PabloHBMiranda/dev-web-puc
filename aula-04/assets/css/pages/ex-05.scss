@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+}
+
+.rastro {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}

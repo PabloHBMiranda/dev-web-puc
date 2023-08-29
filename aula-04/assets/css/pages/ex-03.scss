@@ -1,0 +1,63 @@
+.HEADER-03{
+    font-family: 'Future', sans-serif;
+    background: aqua;
+    width: 100%;
+    height: 50px;
+}
+
+.ex-04{
+    display: flex;
+    width: 100%;
+    background: rgba(26, 22, 22, 0.8);
+    max-height: 350px;
+    height: 100%;
+    padding: 5px;
+    .esquerda{
+        display: flex;
+        justify-content: start;
+        background: rgba(128, 128, 128, 0.73);
+        width: 100%;
+        height: 100%;
+        .lista{
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 300px;
+            height: 100%;
+
+            .item{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                 &:not(:last-child){
+                     border-bottom: 1px solid gray;
+                 }
+                a{
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .direita{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.FOOTER-03{
+    display: flex;
+    font-family: 'Future', sans-serif;
+    background: aqua;
+    width: 100%;
+    height: 100px;
+}

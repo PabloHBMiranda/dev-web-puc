@@ -1,0 +1,44 @@
+.body-01{
+    font-family: 'Georgia', sans-serif !important;
+    background: green !important;
+    color: blue;
+
+    h1{
+        font-family: 'Future', sans-serif;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .ex-01{
+        background: yellow;
+        font-family: "Tibetan Machine Uni";
+        font-size: 11px;
+        color: black;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+
+    ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        #teste-item{
+            background: black;
+            padding: 20px;
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            transition: .2s;
+
+            &:hover{
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
