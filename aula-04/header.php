@@ -10,6 +10,12 @@
     <?php
     $url = $_SERVER["REQUEST_URI"];
     $url_part = explode('/', $url);
+
+    foreach ($url_part as $key => $value) {
+        if ($value == '') {
+            unset($url_part[$key]);
+        }
+    }
     ?>
     <title><?= end($url_part) ?></title>
 </head>
