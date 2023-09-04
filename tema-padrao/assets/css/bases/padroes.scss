@@ -11,7 +11,8 @@
 }
 
 body {
-    background: #cacaca;
+    background: var(--background-color);
+    font-family: var(--fonte-family);
 
     .container{
         display: flex;
