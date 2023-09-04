@@ -12,4 +12,11 @@
 
 body {
     background: #cacaca;
+
+    .container{
+        display: flex;
+        margin: 0 auto;
+        max-width: 1195px;
+        width: 100%;
+    }
 }

@@ -1,3 +1,3 @@
-<section>
-    <h1 class="titulo">MINHA PÁGINA TESTE</h1>
+<section class="template-header-main">
+    <div class="container"></div>
 </section>
