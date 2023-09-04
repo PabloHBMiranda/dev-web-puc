@@ -1,0 +1,22 @@
+.template-footer-main{
+    display: flex;
+    width: 100%;
+    background: white;
+    height: 100%;
+    .container{
+        .wrapper-footer-main{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            padding: 70px 0;
+            align-items: center;
+            justify-content: center;
+            .footer-main-title{
+                transition: .2s;
+                &:hover{
+                    color: var(--secundaria);
+                }
+            }
+        }
+    }
+}
