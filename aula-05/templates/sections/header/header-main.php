@@ -2,22 +2,22 @@
 
 $items = [
     'name' => [
-        'Menu 1',
+        'Cadastro',
         'Menu 2',
         'Menu 3',
         'Menu 4',
         'Menu 5',],
-    'url' => ['https://google.com.br',
+    'url' => ['http://localhost/dev-web-puc/aula-05/cadastro',
         'https://google.com.br',
         'https://google.com.br',
         'https://google.com.br',
         'https://google.com.br',],
 
-    'target' => ['_blank',
-        '_blank',
-        '_blank',
-        '_blank',
-        '_blank',]
+    'target' => ['_self',
+        '_self',
+        '_self',
+        '_self',
+        '_self  ',]
 ];
 
 ?>
