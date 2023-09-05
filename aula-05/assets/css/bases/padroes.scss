@@ -11,5 +11,13 @@
 }
 
 body {
-    background: #cacaca;
+    background: var(--background-color);
+    font-family: var(--fonte-family);
+
+    .container{
+        display: flex;
+        margin: 0 auto;
+        max-width: 1195px;
+        width: 100%;
+    }
 }

@@ -1,3 +1,28 @@
-.titulo{
-  background: red;
+.template-home-page {
+    display: flex;
+    flex-direction: column;
+    background: #3D4147;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+
+        .wrapper-home-page {
+            display: flex;
+            background: #82BE5B;
+            height: 600px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius-general);
+
+            .text {
+                display: flex;
+                font-size: 48px;
+                font-weight: 800;
+
+            }
+        }
+    }
 }

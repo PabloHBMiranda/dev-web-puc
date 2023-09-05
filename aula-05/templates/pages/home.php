@@ -1,9 +1,9 @@
 <?php
 ?>
-<div>
-    <h1>PARA EXECUTAR O PROEJETO</h1>
-    <div>
-        <p>DIGITE NA URL: http://localhost/dev-web-puc/aula-04/ex-0{número do exercicio}</p>
-        <p>EXEMPLO: http://localhost/dev-web-puc/aula-04/ex-01</p>
+<section class="template-home-page">
+    <div class="container">
+        <div class="wrapper-home-page">
+            <p class="text">ESCOLHA UM ITEM DO MENU</p>
+        </div>
     </div>
-</div>
+</section>
