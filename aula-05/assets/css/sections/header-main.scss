@@ -9,6 +9,15 @@
             width: 100%;
             flex-direction: row;
             padding: 20px 0;
+
+            .navbar-brand{
+                .logo{
+                    width: 200px;
+                    height: 130px;
+                    border-radius: var(--border-radius-general);
+                }
+            }
+
             .nav-bar{
                 display: flex;
                 flex-direction: row;
@@ -20,6 +29,8 @@
                     font-size: 20px;
                     transition: .2s;
                     font-weight: 700;
+                    align-items: center;
+                    justify-content: center;
 
                     &:hover{
                         color: var(--secundaria);

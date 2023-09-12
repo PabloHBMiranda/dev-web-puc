@@ -25,6 +25,9 @@ $items = [
 <section class="template-header-main">
     <div class="container">
         <div class="wrapper-header-main">
+            <a class="navbar-brand" href="http://localhost/dev-web-puc/aula-05/">
+                <img src="assets/images/logo.jpg" alt="Logo da Minha Empresa" class="logo">
+            </a>
             <ul class="nav-bar">
                 <?php
                    for($i = 0; $i < count($items['name']); $i++) {
