@@ -15,7 +15,27 @@ document.addEventListener("DOMContentLoaded", function () { // >> Isso aqui agua
                 text = "Preencha todos os campos!";
             }
             document.querySelector('.modal-body').innerHTML = text; // >> Isso aqui muda o texto do modal
+
             modal.show(); // >> Isso aqui mostra o modal
+
+            const modal_2 = document.querySelector('#cadastroConcluidoModal'); // >> Isso aqui pega o modal
+            const close_modal = document.querySelector('.btn-close-modal'); // >> Isso aqui pega o botão de fechar o modal
+            const min_close = document.querySelector('.close'); // >> Isso aqui pega o botão de fechar o modal
+
+            close_modal?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
+                console.log("azdawdawdawd");
+                window.location.href = 'sua-outra-pagina.html'; // >> Isso aqui redireciona a pessoa para outra página
+            });
+
+            min_close?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
+                window.location.href = 'sua-outra-pagina.html'; // >> Isso aqui redireciona a pessoa para outra página
+            });
+
+            modal_2.addEventListener('click', (e) => { // >> Isso aqui aguarda a pessoa no modal(NA PARTE QUE FICA ESCURA DA TELA)
+                if (e.target === e.currentTarget) { // >> Isso aqui verifica se a pessoa clicou fora do modal(NA PARTE QUE FICA ESCURA DA TELA)
+                    window.location.href = 'sua-outra-pagina.html'; // >> Isso aqui redireciona a pessoa para outra página
+                }
+            })
         }
     });
 });
