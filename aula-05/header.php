@@ -15,7 +15,7 @@
     <script src="bundle/index.js"></script>
     <?php $url = $_SERVER["REQUEST_URI"];
     $url_part = explode('/', $url); ?>
-    <title><?= ucfirst(end($url_part)) ?></title>
+    <title><?= ucfirst(end($url_part)) ?></title>z
 </head>
 <body>
 <header>

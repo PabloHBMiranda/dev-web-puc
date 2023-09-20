@@ -1,10 +1,7 @@
 import Swiper, {Autoplay, Navigation, Pagination} from 'swiper/bundle';
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const banners = document.querySelectorAll('.template-home-front-page');
-
-    console.log(banners);
     banners?.forEach(item => {
         let config = {
             loop: false,

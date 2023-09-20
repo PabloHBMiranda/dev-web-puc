@@ -2,16 +2,12 @@
 
 $items = [
     'name' => [
+            'Principal',
         'Cadastro',
-        'Menu 2',
-        'Menu 3',
-        'Menu 4',
-        'Menu 5',],
-    'url' => ['cadastro',
-        'https://google.com.br',
-        'https://google.com.br',
-        'https://google.com.br',
-        'https://google.com.br',],
+        'Conteúdo'
+    ],
+    'url' => [URL_SITE,'cadastro',
+        'conteudo'],
 
     'target' => ['_self',
         '_self',

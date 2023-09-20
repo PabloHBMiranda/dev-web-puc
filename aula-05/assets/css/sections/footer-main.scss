@@ -1,7 +1,7 @@
 .template-footer-main{
     display: flex;
     width: 100%;
-    background: white;
+    background: var(--background-steam-color);
     height: 100%;
     .container{
         .wrapper-footer-main{
@@ -12,6 +12,7 @@
             align-items: center;
             justify-content: center;
             .footer-main-title{
+                color: var(--fonte-text-color);
                 transition: .2s;
                 &:hover{
                     color: var(--secundaria);

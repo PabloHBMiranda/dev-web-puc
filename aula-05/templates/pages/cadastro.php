@@ -5,11 +5,11 @@
 
 <div class="template-cadastro-page">
     <div class="container" style="justify-content: center">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center card-container">
             <div class="col-md-6" style="max-width: 90% !important; flex: unset !important;">
                 <div class="card" style="background-color: #282c37;">
                     <div class="card-header" style="background-color: #262a32;">
-                        <h4 class="text-center text-white">Cadastro - World of Warcraft</h4>
+                        <h4 class="text-center text-white">Cadastro de Usuário</h4>
                     </div>
                     <div class="card-body">
                         <form id="cadastroForm">
@@ -26,8 +26,8 @@
                                 <input type="password" class="form-control" id="senha" placeholder="Sua senha">
                             </div>
                             <div class="form-group">
-                                <label for="personagem" style="color: white">Nome do Personagem:</label>
-                                <input type="text" class="form-control" id="personagem" placeholder="Nome do seu personagem">
+                                <label for="personagem" style="color: white">Nickname:</label>
+                                <input type="text" class="form-control" id="personagem" placeholder="Digite o nick">
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
                         </form>
@@ -46,9 +46,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    Seu cadastro em World of Warcraft foi concluído com sucesso!
-                </div>
+                <div class="modal-body"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                 </div>

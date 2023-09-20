@@ -1,7 +1,7 @@
 .template-header-main{
     display: flex;
     width: 100%;
-    background: white;
+    background: #171d25;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,.05));
     .container{
         .wrapper-header-main{
@@ -31,6 +31,10 @@
                     font-weight: 700;
                     align-items: center;
                     justify-content: center;
+
+                    a{
+                        color: var(--fonte-text-color);
+                    }
 
                     &:hover{
                         color: var(--secundaria);
