@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function () { // >> Isso aqui agua
         if (modal) { // >> Isso aqui verifica se o modal existe
             var text = "Cadastro realizado com sucesso!"; // >> Isso aqui é o texto que vai aparecer no modal
             const form = document.querySelectorAll('.form-group input'); // >> Isso aqui pega todos os inputs do form(TODOS OS CAMPOS QUE A PESSOA PRECISA PREENCHER)
-            var validadte = true; // >> Isso aqui é uma variável que vai ser usada para validar se todos os campos foram preenchidos
+            var validate = true; // >> Isso aqui é uma variável que vai ser usada para validar se todos os campos foram preenchidos
             form?.forEach(item => { // >> Isso aqui é um loop que vai percorrer todos os inputs(TODOS OS CAMPOS QUE A PESSOA PRECISA PREENCHER, ELE VAI VERIFICAR UM POR UM)
                 if(item.value === ""){ // >> Isso aqui verifica se o campo está vazio(SE ALGUM CAMPO ESTIVER VAZIO ELE VAI ENTRAR NO IF)
-                    validadte = false;
+                    validate = false;
                 }
             });
-            if (!validadte) {// >> Isso aqui verifica se o validadte é falso(SE ELE FOR FALSO ELE VAI ENTRAR NO IF E VAI MUDAR O TEXTO DO MODAL)
+            if (!validate) {// >> Isso aqui verifica se o validadte é falso(SE ELE FOR FALSO ELE VAI ENTRAR NO IF E VAI MUDAR O TEXTO DO MODAL)
                 text = "Preencha todos os campos!";
             }
             document.querySelector('.modal-body').innerHTML = text; // >> Isso aqui muda o texto do modal
@@ -22,20 +22,21 @@ document.addEventListener("DOMContentLoaded", function () { // >> Isso aqui agua
             const close_modal = document.querySelector('.btn-close-modal'); // >> Isso aqui pega o botão de fechar o modal
             const min_close = document.querySelector('.close'); // >> Isso aqui pega o botão de fechar o modal
 
-            close_modal?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
-                console.log("azdawdawdawd");
-                window.location.href = 'sua-outra-pagina.html'; // >> Isso aqui redireciona a pessoa para outra página
-            });
+            if(validate){
+                close_modal?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
+                    window.location.href = 'conteudo'; // >> Isso aqui redireciona a pessoa para outra página
+                });
 
-            min_close?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
-                window.location.href = 'sua-outra-pagina.html'; // >> Isso aqui redireciona a pessoa para outra página
-            });
+                min_close?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
+                    window.location.href = 'conteudo'; // >> Isso aqui redireciona a pessoa para outra página
+                });
 
-            modal_2.addEventListener('click', (e) => { // >> Isso aqui aguarda a pessoa no modal(NA PARTE QUE FICA ESCURA DA TELA)
-                if (e.target === e.currentTarget) { // >> Isso aqui verifica se a pessoa clicou fora do modal(NA PARTE QUE FICA ESCURA DA TELA)
-                    window.location.href = 'sua-outra-pagina.html'; // >> Isso aqui redireciona a pessoa para outra página
-                }
-            })
+                modal_2.addEventListener('click', (e) => { // >> Isso aqui aguarda a pessoa no modal(NA PARTE QUE FICA ESCURA DA TELA)
+                    if (e.target === e.currentTarget) { // >> Isso aqui verifica se a pessoa clicou fora do modal(NA PARTE QUE FICA ESCURA DA TELA)
+                        window.location.href = 'conteudo'; // >> Isso aqui redireciona a pessoa para outra página
+                    }
+                })
+            }
         }
     });
 });
