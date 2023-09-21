@@ -1,0 +1,12 @@
+.template-conteudo-page{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .search-wrapper{
+            display: flex;
+            width: fit-content;
+        }
+    }
+}

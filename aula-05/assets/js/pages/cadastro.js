@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () { // >> Isso aqui aguardar a página ser carregada para executar o código
     document.getElementById("cadastroForm")?.addEventListener("submit", function (event) { // >> Isso aqui aguardar a pessoa apertar o botão cadastrar, se a pessoa clicar mostra a popup(modal)
+
         event.preventDefault(); // >> Isso aqui previne o comportamento padrão do botão cadastrar
         var modal = new bootstrap.Modal(document.getElementById('cadastroConcluidoModal')); // >> Isso aqui pega o modal(PEGA LITERALMENTE O HTML DO MODAL)
         if (modal) { // >> Isso aqui verifica se o modal existe
@@ -24,16 +25,19 @@ document.addEventListener("DOMContentLoaded", function () { // >> Isso aqui agua
 
             if(validate){
                 close_modal?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
-                    window.location.href = 'conteudo'; // >> Isso aqui redireciona a pessoa para outra página
+                    text = form[3].value; // >> Isso aqui pega o valor do segundo input
+                    window.location.href = 'conteudo?user=' + text; // >> Isso aqui redireciona a pessoa para outra página
                 });
 
                 min_close?.addEventListener('click', function () { // >> Isso aqui aguarda a pessoa clicar no botão de fechar o modal
-                    window.location.href = 'conteudo'; // >> Isso aqui redireciona a pessoa para outra página
+                    text = form[3].value; // >> Isso aqui pega o valor do segundo input
+                    window.location.href = 'conteudo?user=' + text; // >> Isso aqui redireciona a pessoa para outra página
                 });
 
                 modal_2.addEventListener('click', (e) => { // >> Isso aqui aguarda a pessoa no modal(NA PARTE QUE FICA ESCURA DA TELA)
                     if (e.target === e.currentTarget) { // >> Isso aqui verifica se a pessoa clicou fora do modal(NA PARTE QUE FICA ESCURA DA TELA)
-                        window.location.href = 'conteudo'; // >> Isso aqui redireciona a pessoa para outra página
+                        text = form[3].value; // >> Isso aqui pega o valor do segundo input
+                        window.location.href = 'conteudo?user=' + text; // >> Isso aqui redireciona a pessoa para outra página
                     }
                 })
             }

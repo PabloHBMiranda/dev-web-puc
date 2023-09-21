@@ -11,6 +11,10 @@ foreach ($url_part as $key => $value) {
     if ($value == '') {
         unset($url_part[$key]);
     }
+
+    if(strpos($value, '?') !== false){
+        $url_part[$key] = explode('?', $value)[0];
+    }
 }
 
 if ($url !== null) {
